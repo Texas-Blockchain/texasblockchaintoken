@@ -59,12 +59,4 @@ def write_keys_to_csv(keys_list):
         key_writer = csv.writer(keys_file, delimiter=',')
         key_writer.writerow(keys_list)
 
-users = get_users_that_liked_post(1137804453338386432)
-keys = get_keys_from_user_bios(users)
-write_keys_to_csv(keys)
 
-contract_address = ""
-wallet_private_key = ""
-wallet_address = ""
-
-w3 = Web3(HTTPProvider(""))
