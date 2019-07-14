@@ -10,30 +10,29 @@ def mint_tbt_to_likers(addresses):
     w3 = Web3(HTTPProvider("https://ropsten.infura.io/v3/4e529bfe5adb43d49db599afcf381cd3"))
 
     # Get token contract address and creator's keys
-    contract_address = w3.toChecksumAddress('0x914f14a9fff4ab5ef6c421b36574e97f2979ad9d')
+    contract_address = w3.toChecksumAddress('0x35cae81ed8ed242e7db6edcafeab04a91cd60184')
     public_key = w3.toChecksumAddress('0xCbcFfBecdB81698DDF3504d4E7dbeD8565f02715')
     private_key = 'CDF28FC7FDCDA6126BE2ECE17CD2008F7C4FB77F25E07F5D810F933BA72E0FA2'
 
-    # Unlock creator's account?
-    w3.personal.unlockAccount(public_key, private_key)
-
     # Get contract object using web3
     contract = w3.eth.contract(address=contract_address, abi=contract_abi.abi)
+    print(contract.all_functions())
 
     # Loop through list of addresses (passed as an argument)
     for key in addresses:
 
-        # BUILT TRANSACTION ???
-        #mint_tx = contract.functions.mint(1).buildTransaction({'from': w3.toChecksumAddress('0x914f14a9fff4ab5ef6c421b36574e97f2979ad9d')})
+        # Get transaction count of address to use as nonce for next transaction
+        tx_count = w3.eth.getTransactionCount(public_key)
 
-        # MINT ???
-        mint_tx = contract.functions.mint(1)
-        #mint_tx.estimateGas()
-        contract.functions.mint(1).transact({'gas': '1000000000000000000'})
-        print(mint_tx)
+        # Build transaction
+        mint_tx = contract.functions.mint(key, 10000000000000000000).buildTransaction({'gas': 1000000, 'nonce': tx_count})
 
-        # TRANSFER TO ADDRESS
-        transaction = contract.functions.transfer(key, 1).transact({'gas': 60000000000})
+        # Sign transaction
+        signed = w3.eth.account.signTransaction(mint_tx, private_key)
+
+        # Send transaction
+        txn_hash = w3.eth.sendRawTransaction(signed.rawTransaction)
+        print(txn_hash)
 
 # Get list of users that liked a post
 likers = get_keys.get_users_that_liked_post(1137804453338386432)
