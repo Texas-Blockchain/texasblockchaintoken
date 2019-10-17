@@ -106,6 +106,8 @@ def mint_tbt(addresses):
 
 # Mint $TBT to people that liked a post
 rters = get_retweeters('txblockchain', 1079502526993575936)
+
 rters_addrs = get_addrs(rters)
 print(rters_addrs)
+
 mint_tbt(rters_addrs)
