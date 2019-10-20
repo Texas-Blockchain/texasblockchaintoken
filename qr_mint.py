@@ -31,9 +31,10 @@ img = Image.open(file_name)
 img.show()
 
 # Start countdown to mint
-time.sleep(0)
+time.sleep(30)
 
-# MINT TOKENS TO ATTENDEES
+# Mint tokens to attendees
+
 # Set scope of Google Sheets API (?)
 scope = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
@@ -62,19 +63,18 @@ contract = w3.eth.contract(address=contract_address, abi=contract_abi.abi)
 attendees = [x for x in attendees if x != '']
 attendees = np.unique(attendees)
 
-# Get transaction count of address to use as nonce for next transaction
-
-
 # Loop through list of addresses (passed as an argument)
 for pk in attendees:
 
-    tx_count = w3.eth.getTransactionCount(public_key)
     print(pk)
+
+    # Get transaction count of address to use as nonce for next transaction
+    tx_count = w3.eth.getTransactionCount(public_key)
+
     # Build transaction
     mint_tx = contract.functions.mint(pk, 10000000000000000000)
-    print(w3.eth.gasPrice)
     print(mint_tx)
-    #print(mint_tx.estimateGas())
+
     tx = mint_tx.buildTransaction({'gas': 1000000, 'nonce': tx_count})
     print(tx)
 
@@ -85,5 +85,3 @@ for pk in attendees:
     txn_hash = w3.eth.sendRawTransaction(signed.rawTransaction)
     success = w3.eth.waitForTransactionReceipt(txn_hash)
     print(success)
-
-    tx_count += 1
