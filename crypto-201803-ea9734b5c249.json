@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "crypto-201803",
+  "private_key_id": "ea9734b5c24994e27d6fc157076d9b64623d5a06",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCrrcyzLzKCQABI\nPMpUsDPI9xH3KfeE/CST4ZR7bFkiUInzI4Zm8rq/eOoZX/kVCEEY0CzxSegByeVt\nUxCrjgbG3wYvF5AUmfAKygAUrodsbaIcIkpzEl3xrABkJUqkEUOxNSHLKrk+bGdP\nT6Lw8205fLcBtDDRXEuC1WeFjwWALkvDVe1Ud3ufQhDPQuhHPvp8AbL7X2weYgVQ\ndUkoxtKerJRsV7Ls/Te7NiRyVCKGCqjPD0D2J0MRDtjWXCZdGxZTOHsaz7lQ7cdc\n86lSPWns/2K2j2MjyZFPGlTy8ESIHapomTBlPZ8N4Sc08ar0Y98CtTR6SOYEgp5j\nolbNpVoLAgMBAAECggEAB32cVl8jUYqQWJaKb3qGr+iT2Jh0q9FCmU845s+57eTc\nuAafSSOjIVKZyESnPhMvn/EJXPfQDy/rekMrEYkvY4L8ppZdG4EB976LlVtuHj2E\nWrzmSbIN9kr+c2ArKxBzxyod0NsK3R3mvg+n+OJuLBl0dLcTgDcKNmmwTCQK5eZM\n3rFvwAMwEEjVzgxjx4xzs0pCZPqlsXu27a+P3f8TsdOsEHT/AYStT+wrb1NPYWd/\n2wxyv/gDIzwcNyU+HM4yU2WbsqCy+2IqDUnowYR+n46F6fOVYPurzp/9f95OJ93F\nygJ90DI/g13tLnQ4+t2Gltg59eWerSdjV2nsqskIVQKBgQDjC+8m2R+E2tJqEYJK\nUrhH9+tVyR55CVaAf8J4P6/6NMR/sFVeUdBUuzWGSmHuMxZWR7B6OlJAPWv1tUKb\nHZWg46ccksgV0JRpRTZ1nNNPUvz1vGj1VYLckdGrvVeq8slulh4wySXnhonti3lL\ntCuYgV/IUe4XBdo2+PXTv671tQKBgQDBklrfmTTF+mJ7pRIOc0ZCz3jTh0zAZhMM\nAjUSZMZMrAiWtv1/2JLqvDAfylMZFsJBBaoV+Mah7/L5ClGy0HsyPPJcw7VPP/d5\n+/1MeByEU87RBl7j7fbHJ7+hTIhCXpcYhgt2+d2j9PiMCWfzL1f4w2ukdWKAUlBx\n6LPvc7DovwKBgDPYRMrVJ4pZwVRxHRRFoUjlxro3C5tN04/SHKECwfdbV0dlB4lb\nGzxN52H72DLhPYeEJTsz2BZNMDrSIhxze/haI421wrSghVMod9AReHsTkym11S24\nUgJ11a/ms38Yo4B6DPjM5bfhk9tHTvJHePEBEdMXSku9jV+iJ9grXBNFAoGAILSa\nuAbJvN2WQC/ewiRF7cniL1M/644Tj8bbsrTmMFQsy1I1uKEeCZ0sQGLN8YI/5f6Q\nA1BaN0g0dFGDBkRlXFKh3HyQqMg1Bx5FaOMuZklGu1hpNfeh53pWzWkB6LzUqKcV\nTs/e2/HrALYiIxuPsI9MI6hVsTq3LtfTdxTEAj8CgYBS2yWuZiGElhuu3vcZIx4v\nI3IvzfvDkXMqBW9UeN5yv2yIlmCsszBNxE49h0H163d0iCUAWEjv3McPZBTViAzG\nHuDsF7PTWzEz2jUY1tnEXjeuXFD+shJjE+3ajHoo38SNG9kPUhfvyW+QZwtdkejd\n58cD0QrpYs5kQrfhchCz8w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "attendance@crypto-201803.iam.gserviceaccount.com",
+  "client_id": "109760798260631038433",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/attendance%40crypto-201803.iam.gserviceaccount.com"
+}

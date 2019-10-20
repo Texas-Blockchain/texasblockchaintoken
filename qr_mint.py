@@ -31,7 +31,7 @@ img = Image.open(file_name)
 img.show()
 
 # Start countdown to mint
-time.sleep(30)
+time.sleep(0)
 
 # MINT TOKENS TO ATTENDEES
 # Set scope of Google Sheets API (?)
