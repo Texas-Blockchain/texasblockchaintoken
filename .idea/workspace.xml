@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e58f4707-a2ff-4fa3-b796-bc9b96a209db" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/qr_mint.py" beforeDir="false" afterPath="$PROJECT_DIR$/qr_mint.py" afterDir="false" />
-    </list>
+    <list default="true" id="e58f4707-a2ff-4fa3-b796-bc9b96a209db" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,8 +42,8 @@
       <file leaf-file-name="qr_mint.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/qr_mint.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+            <state relative-caret-position="986">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -471,8 +469,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qr_mint.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+        <state relative-caret-position="986">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
