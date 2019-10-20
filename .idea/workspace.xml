@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e58f4707-a2ff-4fa3-b796-bc9b96a209db" name="Default" comment="" />
+    <list default="true" id="e58f4707-a2ff-4fa3-b796-bc9b96a209db" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/exchange.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exchange_abi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/liquidity.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniswap_abi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uniswap_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qr_mint.py" beforeDir="false" afterPath="$PROJECT_DIR$/qr_mint.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,22 +19,16 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/texasblockchaintoken$get_keys.coverage" NAME="get_keys Coverage Results" MODIFIED="1571273230359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/texasblockchaintoken$exchange__1_.coverage" NAME="exchange (1) Coverage Results" MODIFIED="1571557690468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/texasblockchaintoken$qr_mint.coverage" NAME="qr_mint Coverage Results" MODIFIED="1571548867294" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/texasblockchaintoken$mint_tbt_to_retweeters.coverage" NAME="mint_tbt_to_retweeters Coverage Results" MODIFIED="1571275032450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/texasblockchaintoken$liquidity.coverage" NAME="liquidity Coverage Results" MODIFIED="1571554319969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/texasblockchaintoken$exchange.coverage" NAME="exchange Coverage Results" MODIFIED="1571552461084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/texasblockchaintoken$mint_tbt.coverage" NAME="mint_tbt Coverage Results" MODIFIED="1571274683341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/texasblockchaintoken$mint_tbt_to_likers.coverage" NAME="mint_tbt_to_likers Coverage Results" MODIFIED="1571252104906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Token.sol" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contracts/Token.sol">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="mint_tbt_to_retweeters.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mint_tbt_to_retweeters.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -39,14 +41,77 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="qr_mint.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qr_mint.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/qr_mint.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="370">
+              <caret line="84" column="4" lean-forward="true" selection-start-line="84" selection-start-column="4" selection-end-line="86" selection-end-column="18" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uniswap_factory.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uniswap_factory.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="80" selection-end-line="11" selection-end-column="80" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exchange.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/exchange.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="exchange_abi.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/exchange_abi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="11027" selection-start-line="1" selection-start-column="11027" selection-end-line="1" selection-end-column="11027" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="liquidity.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/liquidity.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4">
+              <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uniswap_abi.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/uniswap_abi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="1305" selection-start-line="1" selection-start-column="1305" selection-end-line="1" selection-end-column="1305" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crypto-201803-ea9734b5c249.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crypto-201803-ea9734b5c249.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -61,33 +126,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SafeMath.sol" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contracts/SafeMath.sol">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IERC20.sol" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contracts/IERC20.sol">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Context.sol" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contracts/Context.sol">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -127,7 +165,11 @@
         <option value="$PROJECT_DIR$/mint_tbt.py" />
         <option value="$PROJECT_DIR$/get_addresses.py" />
         <option value="$PROJECT_DIR$/mint_tbt_to_retweeters.py" />
+        <option value="$PROJECT_DIR$/uniswap_abi.py" />
         <option value="$PROJECT_DIR$/qr_mint.py" />
+        <option value="$PROJECT_DIR$/liquidity.py" />
+        <option value="$PROJECT_DIR$/exchange_abi.py" />
+        <option value="$PROJECT_DIR$/exchange.py" />
       </list>
     </option>
   </component>
@@ -175,6 +217,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pdawg\MIS333K\texasblockchaintoken" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\pdawg\MIS333K\texasblockchaintoken" />
     </key>
@@ -191,8 +236,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.qr_mint">
-    <configuration name="get_keys" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.exchange (1)">
+    <configuration name="exchange (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="texasblockchaintoken" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -205,13 +250,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\pdawg\MIS333K\texasblockchaintoken\mint_tbt_to_retweeters.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exchange.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="mint_tbt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="exchange" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="texasblockchaintoken" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -224,13 +269,13 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mint_tbt.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\pdawg\MIS333K\texasblockchaintoken\uniswap_factory.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="mint_tbt_to_likers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="liquidity" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="texasblockchaintoken" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -243,7 +288,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\pdawg\MIS333K\texasblockchaintoken\mint_tbt.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/liquidity.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -288,19 +333,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.mint_tbt_to_likers" />
-      <item itemvalue="Python.get_keys" />
-      <item itemvalue="Python.mint_tbt" />
       <item itemvalue="Python.mint_tbt_to_retweeters" />
       <item itemvalue="Python.qr_mint" />
+      <item itemvalue="Python.exchange" />
+      <item itemvalue="Python.liquidity" />
+      <item itemvalue="Python.exchange (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.exchange (1)" />
+        <item itemvalue="Python.liquidity" />
+        <item itemvalue="Python.exchange" />
         <item itemvalue="Python.qr_mint" />
         <item itemvalue="Python.mint_tbt_to_retweeters" />
-        <item itemvalue="Python.mint_tbt" />
-        <item itemvalue="Python.get_keys" />
-        <item itemvalue="Python.mint_tbt_to_likers" />
       </list>
     </recent_temporary>
   </component>
@@ -322,15 +367,15 @@
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32965517" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -467,12 +512,63 @@
     <entry file="file://$PROJECT_DIR$/attendance_10_20_19.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/crypto-201803-ea9734b5c249.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniswap_abi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="1305" selection-start-line="1" selection-start-column="1305" selection-end-line="1" selection-end-column="1305" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/qr_mint.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="370">
+          <caret line="84" column="4" lean-forward="true" selection-start-line="84" selection-start-column="4" selection-end-line="86" selection-end-column="18" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uniswap_factory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="80" selection-end-line="11" selection-end-column="80" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liquidity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exchange_abi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="11027" selection-start-line="1" selection-start-column="11027" selection-end-line="1" selection-end-column="11027" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/exchange.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="17" column="62" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
