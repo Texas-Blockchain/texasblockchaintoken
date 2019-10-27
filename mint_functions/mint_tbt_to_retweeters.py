@@ -2,7 +2,7 @@ from web3 import Web3, HTTPProvider
 import csv
 import twitter
 import tweepy
-import contract_abi
+from mint_functions import contract_abi
 
 # Build Twitter api
 api = twitter.Api(consumer_key='2R1jql1adPTC4TkE7IWKUzg2e',

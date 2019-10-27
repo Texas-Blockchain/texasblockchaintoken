@@ -1,5 +1,5 @@
 from web3 import Web3, HTTPProvider
-import uniswap_abi
+from exchange import uniswap_abi
 
 # Connect to an Infura node (for now...)
 w3 = Web3(HTTPProvider("https://ropsten.infura.io/v3/4e529bfe5adb43d49db599afcf381cd3"))
