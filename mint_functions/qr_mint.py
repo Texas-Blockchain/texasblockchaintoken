@@ -2,7 +2,7 @@ import pyqrcode
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from web3 import Web3, HTTPProvider
-from mint_functions import contract_abi
+import contract_abi
 import time
 from PIL import Image
 import numpy as np
