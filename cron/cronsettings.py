@@ -2,8 +2,8 @@
 from crontab import CronTab
 
 #Need to fill in these values
-rootUsername = ""
-pathToFolder = ""
+rootUsername = "bitcoinnode"
+pathToFolder = "/home/bitcoinnode/texasblockchaintoken/mint_functions"
 
 cron = CronTab(user=rootUsername)
 
@@ -28,12 +28,17 @@ def viewAllJobs():
         print (job)
 
 def emptyCronFile():
-    cron.remove_all()
+    for job in cron:
+        print (job)
+
+    cron.remove(job)
+    print ("Job removed")
 
 #Example calls:
 #add a git pull - don't need to specify file name just folder
 #addNewJob("git pull", "")
 
 #add the qr mint
-#addNewJob("python ", "qr_mint.py")
-
+addNewJob("python3", "mint_tbt_to_retweeters.py")
+# viewAllJobs()
+# emptyCronFile()
