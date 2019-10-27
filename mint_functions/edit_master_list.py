@@ -80,6 +80,7 @@ rters = get_retweeters('txblockchain', 1079502526993575936)
 def historicalTweets(username,maxid):
     data = api.user_timeline(screen_name=username, count=20, max_id=maxid,include_rts=False)
     dataToAddToSheet = []
+    data = data[1:]
     for tweet in data:
         tweetid = tweet.id
         if(int(tweet.retweet_count) > 0):
@@ -90,7 +91,7 @@ def historicalTweets(username,maxid):
     print("Last ID checked: " + str(tweetid))
 
     addToFile(dataToAddToSheet)
-    time.sleep(60*15) #wait 15 min
+    time.sleep(60*1) #wait 15 min
     if (len(data) > 1):
         historicalTweets(username,data[len(data) - 1].id)
 
@@ -113,6 +114,6 @@ def addToFile(retweeters):
 # print(rters_addrs)
 
 # mint_tbt(rters_addrs)
-historicalTweets('txblockchain',1107322157636481030) #start at most recent tweet
+historicalTweets('txblockchain',1188150569619394562) #start at most recent tweet
 # getTwitterAddress()
 # test()
