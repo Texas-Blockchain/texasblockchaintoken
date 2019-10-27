@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e58f4707-a2ff-4fa3-b796-bc9b96a209db" name="Default" comment="" />
+    <list default="true" id="e58f4707-a2ff-4fa3-b796-bc9b96a209db" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +38,8 @@
       <file leaf-file-name="qr_mint.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mint_functions/qr_mint.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+            <state relative-caret-position="153">
+              <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
               <folding>
                 <element signature="e#5#20#0" expanded="true" />
               </folding>
@@ -95,15 +97,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" column="1305" selection-start-line="1" selection-start-column="1305" selection-end-line="1" selection-end-column="1305" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="crypto-201803-ea9734b5c249.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/crypto-201803-ea9734b5c249.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -205,10 +198,12 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pdawg\MIS333K\texasblockchaintoken\exchange" />
+      <recent name="C:\Users\pdawg\MIS333K\texasblockchaintoken\mint_functions" />
       <recent name="C:\Users\pdawg\MIS333K\texasblockchaintoken" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\pdawg\MIS333K\texasblockchaintoken" />
     </key>
   </component>
@@ -352,6 +347,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -705,8 +701,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mint_functions/qr_mint.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+        <state relative-caret-position="153">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
             <element signature="e#5#20#0" expanded="true" />
           </folding>
