@@ -3,7 +3,7 @@ from crontab import CronTab
 
 #Need to fill in these values
 rootUsername = "bitcoinnode"
-pathToFolder = "/home/bitcoinnode/texasblockchaintoken/mint_functions"
+pathToFolder = "/home/bitcoinnode/texasblockchaintoken"
 
 cron = CronTab(user=rootUsername)
 
@@ -39,6 +39,6 @@ def emptyCronFile():
 #addNewJob("git pull", "")
 
 #add the qr mint
-addNewJob("python3", "mint_tbt_to_retweeters.py")
+# addNewJob("git pull", "mint_tbt_to_retweeters.py")
 # viewAllJobs()
 # emptyCronFile()

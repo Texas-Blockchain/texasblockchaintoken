@@ -92,7 +92,7 @@ def historicalTweets(username,maxid):
     addToFile(dataToAddToSheet)
     time.sleep(60*15) #wait 15 min
     if (len(data) > 1):
-        getTweetsOfUser(username,data[len(data) - 1].id)
+        historicalTweets(username,data[len(data) - 1].id)
 
  # Set scope of Google Sheets API (?)
 scope = ['https://spreadsheets.google.com/feeds',
@@ -113,6 +113,6 @@ def addToFile(retweeters):
 # print(rters_addrs)
 
 # mint_tbt(rters_addrs)
-historicalTweets('txblockchain',1188150569619394562) #start at most recent tweet
+historicalTweets('txblockchain',1107322157636481030) #start at most recent tweet
 # getTwitterAddress()
 # test()
