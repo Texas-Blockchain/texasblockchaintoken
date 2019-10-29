@@ -12,3 +12,5 @@
 'mint_functions' : Python files that provide supply-side constraints for the TBT economy.
 
 'exchange' : Python files that manage Uniswap contracts (https://uniswap.io/)
+
+To download all packages needed, navigate to the project folder in Terminal and run `pip install -r requirements.txt`
