@@ -46,24 +46,26 @@ gs = gspread.authorize(credentials)
 ss = gs.open("Proof of Attendance TEST (Responses)")
 sheet_list = ss.worksheets()
 
+'''
 try:
     sheet = ss.add_worksheet(title='attendance_' + timestamp, rows=100, cols=2)
 except:
     sheet = ss.worksheet('attendance_' + timestamp)
 
 print(ss.worksheets())
-
+'''
+sheet = ss.worksheet('Form Responses 1')
 
 # Get attendees
 attendees = sheet.col_values(2)[1:]
-
+print(attendees)
 # Connect to an Ethereum node using Infura
 w3 = Web3(HTTPProvider("https://ropsten.infura.io/v3/4e529bfe5adb43d49db599afcf381cd3"))
 
 # Get token contract address and creator's keys
-contract_address = w3.toChecksumAddress('0x35cae81ed8ed242e7db6edcafeab04a91cd60184')
-public_key = w3.toChecksumAddress('0xCbcFfBecdB81698DDF3504d4E7dbeD8565f02715')
-private_key = 'CDF28FC7FDCDA6126BE2ECE17CD2008F7C4FB77F25E07F5D810F933BA72E0FA2'
+contract_address = w3.toChecksumAddress('0x9e2b0752131cb2f424f39ce509cccb230cd9304f')
+public_key = w3.toChecksumAddress('0x6D10875b3C3F53F1C1cf9aE130B1A415790f8Cf3')
+private_key = '74BC2E012071FCA65CA31FA7AFE0483929A451180ACBF9D9647A06AC30E69957'
 
 # Get contract object using web3
 contract = w3.eth.contract(address=contract_address, abi=contract_abi.abi)
@@ -71,23 +73,26 @@ contract = w3.eth.contract(address=contract_address, abi=contract_abi.abi)
 attendees = [x for x in attendees if x != '']
 attendees = np.unique(attendees)
 
+print(attendees)
 # Loop through list of addresses (passed as an argument)
 for pk in attendees:
 
-    # Get transaction count of minter address to use as nonce for next transaction
-    tx_count = w3.eth.getTransactionCount(public_key)
+    if pk.lower() == '0x0ad775d68d015869704ca7af43b6a7e141e16e49':
 
-    # Build transaction
-    mint_tx = contract.functions.burn(pk, 10000000000000000000)
-    print(mint_tx)
+        # Get transaction count of minter address to use as nonce for next transaction
+        tx_count = w3.eth.getTransactionCount(public_key)
 
-    tx = mint_tx.buildTransaction({'gas': 1000000, 'nonce': tx_count})
-    print(tx)
+        # Build transaction
+        mint_tx = contract.functions.burn(pk, 225000000000000000000)
+        print(mint_tx)
 
-    # Sign transaction
-    signed = w3.eth.account.signTransaction(tx, private_key)
+        tx = mint_tx.buildTransaction({'gas': 1000000, 'nonce': tx_count})
+        print(tx)
 
-    # Send transaction
-    txn_hash = w3.eth.sendRawTransaction(signed.rawTransaction)
-    success = w3.eth.waitForTransactionReceipt(txn_hash)
-    print(success)
+        # Sign transaction
+        signed = w3.eth.account.signTransaction(tx, private_key)
+
+        # Send transaction
+        txn_hash = w3.eth.sendRawTransaction(signed.rawTransaction)
+        success = w3.eth.waitForTransactionReceipt(txn_hash)
+        print(success)
