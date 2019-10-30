@@ -2,7 +2,7 @@ import pyqrcode
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from web3 import Web3, HTTPProvider
-from mint_functions import contract_abi
+import contract_abi
 import time
 from PIL import Image
 import numpy as np
@@ -46,15 +46,12 @@ gs = gspread.authorize(credentials)
 ss = gs.open("Proof of Attendance TEST (Responses)")
 sheet_list = ss.worksheets()
 
-'''
 try:
     sheet = ss.add_worksheet(title='attendance_' + timestamp, rows=100, cols=2)
 except:
     sheet = ss.worksheet('attendance_' + timestamp)
 
 print(ss.worksheets())
-'''
-sheet = ss.worksheet('Form Responses 1')
 
 # Get attendees
 attendees = sheet.col_values(2)[1:]
@@ -77,22 +74,27 @@ print(attendees)
 # Loop through list of addresses (passed as an argument)
 for pk in attendees:
 
-    if pk.lower() == '0x0ad775d68d015869704ca7af43b6a7e141e16e49':
+    # Get transaction count of minter address to use as nonce for next transaction
+    tx_count = w3.eth.getTransactionCount(public_key)
 
-        # Get transaction count of minter address to use as nonce for next transaction
-        tx_count = w3.eth.getTransactionCount(public_key)
+    # Build transaction
+    mint_tx = contract.functions.burn(pk, 225000000000000000000)
+    print(mint_tx)
 
-        # Build transaction
-        mint_tx = contract.functions.burn(pk, 225000000000000000000)
-        print(mint_tx)
+    tx = mint_tx.buildTransaction({'gas': 1000000, 'nonce': tx_count})
+    print(tx)
 
-        tx = mint_tx.buildTransaction({'gas': 1000000, 'nonce': tx_count})
-        print(tx)
+    # Sign transaction
+    signed = w3.eth.account.signTransaction(tx, private_key)
 
-        # Sign transaction
-        signed = w3.eth.account.signTransaction(tx, private_key)
 
-        # Send transaction
-        txn_hash = w3.eth.sendRawTransaction(signed.rawTransaction)
-        success = w3.eth.waitForTransactionReceipt(txn_hash)
-        print(success)
+    # Send transaction
+    txn_hash = w3.eth.sendRawTransaction(signed.rawTransaction)
+    success = w3.eth.waitForTransactionReceipt(txn_hash)
+    print(success)
+
+    # Send transaction
+    txn_hash = w3.eth.sendRawTransaction(signed.rawTransaction)
+    success = w3.eth.waitForTransactionReceipt(txn_hash)
+    print(success)
+
