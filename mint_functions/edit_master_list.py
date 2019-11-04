@@ -102,7 +102,7 @@ scope = ['https://spreadsheets.google.com/feeds',
 def addToFile(retweeters): 
     credentials = ServiceAccountCredentials.from_json_keyfile_name('crypto-201803-ea9734b5c249.json', scope)
     gs = gspread.authorize(credentials)
-    ss = gs.open("Twitter Rewards")
+    ss = gs.open("Master Spreadsheet")
     tweets_sheet = ss.worksheet("Tweets")
 
     for row in retweeters:
