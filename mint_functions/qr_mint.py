@@ -60,9 +60,9 @@ print(attendees)
 w3 = Web3(HTTPProvider("https://ropsten.infura.io/v3/4e529bfe5adb43d49db599afcf381cd3"))
 
 # Get token contract address and creator's keys
-contract_address = w3.toChecksumAddress('0x9e2b0752131cb2f424f39ce509cccb230cd9304f')
-public_key = w3.toChecksumAddress('0x6D10875b3C3F53F1C1cf9aE130B1A415790f8Cf3')
-private_key = '74BC2E012071FCA65CA31FA7AFE0483929A451180ACBF9D9647A06AC30E69957'
+contract_address = w3.toChecksumAddress('0x35cae81Ed8Ed242E7db6eDcafEAb04A91cD60184')
+public_key = w3.toChecksumAddress('0xCbcFfBecdB81698DDF3504d4E7dbeD8565f02715')
+private_key = 'CDF28FC7FDCDA6126BE2ECE17CD2008F7C4FB77F25E07F5D810F933BA72E0FA2'
 
 # Get contract object using web3
 contract = w3.eth.contract(address=contract_address, abi=contract_abi.abi)
