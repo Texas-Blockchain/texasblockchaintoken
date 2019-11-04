@@ -85,7 +85,7 @@ def update_sheet_with_address(data, participants,text):
     screen_name = (api.get_user(data['sender_id']))
     screen_name = screen_name._json['screen_name']
     #go through all rows of spreadsheet and see if their handle is already there
-    row_number = 2 #start at 2 b/c we ignore the header row b/c of the column names
+    row_number = 1
     user_on_sheet = False
     for person in participants:
         if screen_name in person:
@@ -108,7 +108,7 @@ def get_partipants_from_sheet():
     ss = gs.open("Master Spreadsheet")
     sheet = ss.worksheet("Participants")
     people = sheet.get_all_values()
-    return people[1:]    
+    return people    
 
 #update the sheet with the eth address w/ a certain twitter handle
 def update_sheet(rowNumber, address):
