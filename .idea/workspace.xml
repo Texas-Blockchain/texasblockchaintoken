@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e58f4707-a2ff-4fa3-b796-bc9b96a209db" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/mint_functions/qr_mint.py" beforeDir="false" afterPath="$PROJECT_DIR$/mint_functions/qr_mint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mint_functions/consensus.py" beforeDir="false" afterPath="$PROJECT_DIR$/mint_functions/consensus.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="qr_mint.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="qr_mint.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mint_functions/qr_mint.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="62" column="83" selection-start-line="62" selection-start-column="83" selection-end-line="62" selection-end-column="83" />
+            <state relative-caret-position="17">
+              <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -49,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="consensus.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="consensus.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mint_functions/consensus.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
@@ -173,8 +173,8 @@
         <option value="$PROJECT_DIR$/mint_tbt_to_retweeters.py" />
         <option value="$PROJECT_DIR$/qr_mint.py" />
         <option value="$PROJECT_DIR$/mint_functions/edit_master_list.py" />
-        <option value="$PROJECT_DIR$/mint_functions/consensus.py" />
         <option value="$PROJECT_DIR$/mint_functions/qr_mint.py" />
+        <option value="$PROJECT_DIR$/mint_functions/consensus.py" />
       </list>
     </option>
   </component>
@@ -767,22 +767,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mint_functions/qr_mint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mint_functions/consensus.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mint_functions/qr_mint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="62" column="83" selection-start-line="62" selection-start-column="83" selection-end-line="62" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -24,3 +24,4 @@ creativity = sheet.col_values(5)[1:]
 practicality = sheet.col_values(6)[1:]
 respect = sheet.col_values(7)[1:]
 
+
