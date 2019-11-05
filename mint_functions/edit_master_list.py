@@ -129,6 +129,3 @@ def add_user_to_sheet(handle, address, rowNumber):
     address = address[:42]
     sheet.update_cell(rowNumber,2,address)
     return sheet.update_cell(rowNumber,4,handle)
-
-# check_direct_messages()
-print(api.mentions_timeline(include_rts=True))
