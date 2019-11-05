@@ -53,15 +53,14 @@ except:
 
 print(ss.worksheets())
 
-
 # Get attendees
 attendees = sheet.col_values(2)[1:]
-
+print(attendees)
 # Connect to an Ethereum node using Infura
 w3 = Web3(HTTPProvider("https://ropsten.infura.io/v3/4e529bfe5adb43d49db599afcf381cd3"))
 
 # Get token contract address and creator's keys
-contract_address = w3.toChecksumAddress('0x35cae81ed8ed242e7db6edcafeab04a91cd60184')
+contract_address = w3.toChecksumAddress('0x35cae81Ed8Ed242E7db6eDcafEAb04A91cD60184')
 public_key = w3.toChecksumAddress('0xCbcFfBecdB81698DDF3504d4E7dbeD8565f02715')
 private_key = 'CDF28FC7FDCDA6126BE2ECE17CD2008F7C4FB77F25E07F5D810F933BA72E0FA2'
 
@@ -71,6 +70,7 @@ contract = w3.eth.contract(address=contract_address, abi=contract_abi.abi)
 attendees = [x for x in attendees if x != '']
 attendees = np.unique(attendees)
 
+print(attendees)
 # Loop through list of addresses (passed as an argument)
 for pk in attendees:
 
@@ -78,7 +78,7 @@ for pk in attendees:
     tx_count = w3.eth.getTransactionCount(public_key)
 
     # Build transaction
-    mint_tx = contract.functions.burn(pk, 10000000000000000000)
+    mint_tx = contract.functions.burn(pk, 225000000000000000000)
     print(mint_tx)
 
     tx = mint_tx.buildTransaction({'gas': 1000000, 'nonce': tx_count})
@@ -87,7 +87,14 @@ for pk in attendees:
     # Sign transaction
     signed = w3.eth.account.signTransaction(tx, private_key)
 
+
     # Send transaction
     txn_hash = w3.eth.sendRawTransaction(signed.rawTransaction)
     success = w3.eth.waitForTransactionReceipt(txn_hash)
     print(success)
+
+    # Send transaction
+    txn_hash = w3.eth.sendRawTransaction(signed.rawTransaction)
+    success = w3.eth.waitForTransactionReceipt(txn_hash)
+    print(success)
+
