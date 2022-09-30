@@ -24,7 +24,7 @@ idna==2.8
 importlib-metadata==0.23
 instagram-private-api==1.6.0
 ipfshttpclient==0.4.12
-joblib==0.14.0
+joblib==1.2.0
 jsonschema==3.1.1
 kiwisolver==1.1.0
 lru-dict==1.1.6
